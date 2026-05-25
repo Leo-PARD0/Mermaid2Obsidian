@@ -2,6 +2,27 @@
 
 Compila diagramas Mermaid para workspaces espaciais `.canvas` compatíveis com Obsidian Canvas, preservando hierarquia, agrupamentos e estrutura conceitual quando o diagrama fornece essa semântica.
 
+## Apoie o Projeto
+
+Se este projeto foi útil para você, considere apoiar o desenvolvimento do framework.
+
+<div align="center">
+
+<a href="https://livepix.gg/leo1pardo" target="_blank">
+
+<img src="./assets/qrcode/Livepix.png" 
+     alt="Apoie via LivePIX" 
+     width="220"/>
+
+</a>
+
+<br>
+
+[💜 Apoiar via LivePIX](https://livepix.gg/leo1pardo)
+
+</div>
+
+
 O projeto agora funciona como um compilador espacial universal:
 
 ```txt
