@@ -1,0 +1,28 @@
+{
+  "name": "mermaid2obsidian",
+  "version": "0.1.0",
+  "description": "Compile Mermaid flowcharts into Obsidian Canvas files.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "mermaid2obsidian": "src/index.js"
+  },
+  "scripts": {
+    "build": "node --check src/index.js",
+    "example": "node src/index.js examples/roadmap.mmd file",
+    "test": "node --test"
+  },
+  "keywords": [
+    "mermaid",
+    "obsidian",
+    "canvas",
+    "graph"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@mermaid-js/parser": "^0.6.2",
+    "dagre": "^0.8.5",
+    "nanoid": "^5.1.6",
+    "prompts": "^2.4.2"
+  }
+}

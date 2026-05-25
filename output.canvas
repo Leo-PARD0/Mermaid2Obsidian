@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "id": "node-OgycXDAq3nd-",
+      "type": "text",
+      "text": "⚡ ETAPA 1",
+      "x": 545,
+      "y": 40,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-25607OmryNdC",
+      "type": "text",
+      "text": "🧂 ETAPA 2",
+      "x": 545,
+      "y": 220,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-iD88qahRth4h",
+      "type": "text",
+      "text": "🧪 ETAPA 3",
+      "x": 293,
+      "y": 400,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-AVAwCT3SL3Yc",
+      "type": "text",
+      "text": "🧪 ETAPA 6",
+      "x": 40,
+      "y": 580,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-ym8xg4yQghqa",
+      "type": "text",
+      "text": "🚽 ETAPA 4",
+      "x": 370,
+      "y": 580,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-wBmlRgBdFW0S",
+      "type": "text",
+      "text": "💊 ETAPA FINAL",
+      "x": 545,
+      "y": 760,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-Clhkd69UylU-",
+      "type": "text",
+      "text": "⚫ ETAPA 5",
+      "x": 720,
+      "y": 400,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-sRPyEh1POENS",
+      "type": "text",
+      "text": "🥤 ETAPA 7",
+      "x": 1148,
+      "y": 220,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-2VQXmAWv25q8",
+      "type": "text",
+      "text": "🍶 ETAPA 8",
+      "x": 1148,
+      "y": 400,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "node-weEyfYGxm-jr",
+      "type": "text",
+      "text": "🧪 ETAPA 9",
+      "x": 1148,
+      "y": 580,
+      "width": 250,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-oiU9UesrGSCF",
+      "fromNode": "node-OgycXDAq3nd-",
+      "fromSide": "bottom",
+      "toNode": "node-25607OmryNdC",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-Ihfj5GoWNNxk",
+      "fromNode": "node-25607OmryNdC",
+      "fromSide": "bottom",
+      "toNode": "node-iD88qahRth4h",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-wKRcjPjRo3rb",
+      "fromNode": "node-iD88qahRth4h",
+      "fromSide": "bottom",
+      "toNode": "node-AVAwCT3SL3Yc",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-CAcyG2tOnF0p",
+      "fromNode": "node-ym8xg4yQghqa",
+      "fromSide": "bottom",
+      "toNode": "node-wBmlRgBdFW0S",
+      "toSide": "top"
+    },
+    {
+      "id": "edge---c_kxcxIcKJ",
+      "fromNode": "node-Clhkd69UylU-",
+      "fromSide": "bottom",
+      "toNode": "node-AVAwCT3SL3Yc",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-aMcKMNm064Ec",
+      "fromNode": "node-sRPyEh1POENS",
+      "fromSide": "bottom",
+      "toNode": "node-2VQXmAWv25q8",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-Xv4D99Few5nt",
+      "fromNode": "node-2VQXmAWv25q8",
+      "fromSide": "bottom",
+      "toNode": "node-weEyfYGxm-jr",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-cLzGEoz9XUJk",
+      "fromNode": "node-weEyfYGxm-jr",
+      "fromSide": "bottom",
+      "toNode": "node-wBmlRgBdFW0S",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-kRl3xsvxibfy",
+      "fromNode": "node-AVAwCT3SL3Yc",
+      "fromSide": "bottom",
+      "toNode": "node-wBmlRgBdFW0S",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-vHiOrNxjWKVp",
+      "fromNode": "node-25607OmryNdC",
+      "fromSide": "bottom",
+      "toNode": "node-wBmlRgBdFW0S",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-cykvOj6SqJwF",
+      "fromNode": "node-iD88qahRth4h",
+      "fromSide": "bottom",
+      "toNode": "node-wBmlRgBdFW0S",
+      "toSide": "top"
+    }
+  ]
+}
