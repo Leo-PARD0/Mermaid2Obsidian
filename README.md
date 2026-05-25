@@ -103,7 +103,7 @@ O grupo e exportado antes dos nodes comuns e recebe bounds automaticos calculado
 
 Quando o Mermaid liga grupos semanticamente:
 
-```mermaid
+```
 F0 --> F1
 ```
 
@@ -397,9 +397,9 @@ Ainda nao suportado:
 
 Mudancas e decisoes do projeto devem ser documentadas em [specs/](specs/).
 
-- [specs/001-current-mvp.md](specs/001-current-mvp.md)
-- [specs/002-knowledge-workspace-generator.md](specs/002-knowledge-workspace-generator.md)
-- [specs/003-universal-mermaid-canvas-compiler.md](specs/003-universal-mermaid-canvas-compiler.md)
-- [specs/004-semantic-spatial-compiler.md](specs/004-semantic-spatial-compiler.md)
-- [specs/005-layout-intelligence-semantic-connectivity.md](specs/005-layout-intelligence-semantic-connectivity.md)
-- [specs/006-mindmap-hierarchy-spatial-engine.md](specs/006-mindmap-hierarchy-spatial-engine.md)
+- [doc/specs/001-current-mvp.md](doc/specs/001-current-mvp.md)
+- [doc/specs/002-knowledge-workspace-generator.md](doc/specs/002-knowledge-workspace-generator.md)
+- [doc/specs/003-universal-mermaid-canvas-compiler.md](doc/specs/003-universal-mermaid-canvas-compiler.md)
+- [doc/specs/004-semantic-spatial-compiler.md](doc/specs/004-semantic-spatial-compiler.md)
+- [doc/specs/005-layout-intelligence-semantic-connectivity.md](doc/specs/005-layout-intelligence-semantic-connectivity.md)
+- [doc/specs/006-mindmap-hierarchy-spatial-engine.md](doc/specs/006-mindmap-hierarchy-spatial-engine.md)
