@@ -1,6 +1,10 @@
 node_modules/
 npm-debug.log*
 *.log
+dist/
 
 input.md
 output.md
+input.canvas
+output.canvas
+desktop.ini

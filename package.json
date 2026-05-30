@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "description": "Compile Mermaid flowcharts into Obsidian Canvas files.",
   "type": "module",
-  "main": "src/index.js",
+  "main": "electron/main.js",
   "bin": {
     "mermaid2obsidian": "src/index.js"
   },
   "scripts": {
     "build": "node --check src/index.js",
     "example": "node src/index.js examples/roadmap.mmd file",
-    "test": "node --test"
+    "test": "node --test",
+    "start": "electron .",
+    "dist": "electron-builder --win"
   },
   "keywords": [
     "mermaid",
@@ -24,5 +26,25 @@
     "dagre": "^0.8.5",
     "nanoid": "^5.1.6",
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "electron": "^42.3.0",
+    "electron-builder": "^26.8.1",
+    "esbuild": "^0.28.0",
+    "pkg": "^5.8.1"
+  },
+  "build": {
+    "appId": "com.mermaid2obsidian.app",
+    "productName": "Mermaid2Obsidian",
+    "files": [
+      "electron/**",
+      "renderer/**",
+      "src/**",
+      "node_modules/**"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon" : "assets/Icon/Camada 5.ico"
+    }
   }
 }

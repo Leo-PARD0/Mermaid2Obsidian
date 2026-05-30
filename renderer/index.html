@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mermaid2Obsidian</title>
+  <style>
+    body { font-family: sans-serif; padding: 32px; background: #1e1e2e; color: #cdd6f4; }
+    h1 { font-size: 18px; margin-bottom: 24px; }
+    button { cursor: pointer; padding: 8px 16px; border: none; border-radius: 6px; }
+    #btn-select { background: #45475a; color: #cdd6f4; }
+    #filepath { margin: 12px 0; font-size: 13px; color: #a6adc8; min-height: 18px; }
+    select { padding: 8px; border-radius: 6px; background: #313244; color: #cdd6f4; border: none; }
+    #btn-compile { background: #cba6f7; color: #1e1e2e; font-weight: bold; margin-top: 16px; display: block; width: 100%; padding: 12px; font-size: 15px; border-radius: 8px; }
+    #status { margin-top: 20px; font-size: 14px; min-height: 20px; }
+    .ok { color: #a6e3a1; }
+    .err { color: #f38ba8; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Mermaid → Obsidian Canvas</h1>
+
+  <button id="btn-select">📂 Selecionar arquivo</button>
+  <div id="filepath">Nenhum arquivo selecionado</div>
+
+  <label for="mode">Modo de exportação:</label><br/>
+  <select id="mode">
+    <option value="text">text</option>
+    <option value="file">file</option>
+  </select>
+
+  <button id="btn-compile">Compilar</button>
+  <div id="status"></div>
+
+  <script>
+    let selectedPath = null;
+
+    document.getElementById('btn-select').addEventListener('click', async () => {
+      const p = await window.api.selectFile();
+      if (p) {
+        selectedPath = p;
+        document.getElementById('filepath').textContent = p;
+      }
+    });
+
+    document.getElementById('btn-compile').addEventListener('click', async () => {
+      const status = document.getElementById('status');
+      if (!selectedPath) {
+        status.textContent = 'Selecione um arquivo primeiro.';
+        status.className = 'err';
+        return;
+      }
+      status.textContent = 'Compilando...';
+      status.className = '';
+      const result = await window.api.compile({
+        inputPath: selectedPath,
+        exportMode: document.getElementById('mode').value,
+      });
+      if (result.ok) {
+        status.textContent = '✅ Canvas gerado com sucesso!';
+        status.className = 'ok';
+      } else {
+        status.textContent = '❌ Erro: ' + result.error;
+        status.className = 'err';
+      }
+    });
+  </script>
+</body>
+</html>

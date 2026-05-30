@@ -36,7 +36,7 @@ export { countTreeLeaves } from './tree/subtreeMetrics.js';
 export { getCanvasOutputPath, getOutputDir } from './utils/paths.js';
 export { sanitizeFilename } from './utils/sanitize.js';
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   await runCli(process.argv.slice(2));
 }
 
